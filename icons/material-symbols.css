@@ -1,6 +1,16 @@
-.material-symbols-outlined{
-	font-size: 24px;
-	color: #c7a589;
-	vertical-align: middle;
-	margin-right: 6px;
+.icon-home > a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-home > a::before {
+  font-family: 'Material Symbols Outlined';
+  content: "home"; /* アイコン名 */
+  font-size: 20px;
+  line-height: 1; /* 重要 */
+  vertical-align: middle;
+  margin-right: 6px;
+  /* Material Symbols のズレ補正 */
+  position: relative;
+  /* top: 1px; */ /* 必要なら 0〜2px で微調整 */
 }
